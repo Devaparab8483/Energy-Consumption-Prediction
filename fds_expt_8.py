@@ -67,7 +67,7 @@ if st.button("Predict"):
   prediction = model.predict(input_features)[0]
   st.write(f"Predicted Energy Consumption: {prediction:.2f} kWh")
 
-"""4. Deployment"""
+
 
 import joblib
 joblib.dump(model, 'ridge_model.pkl')
