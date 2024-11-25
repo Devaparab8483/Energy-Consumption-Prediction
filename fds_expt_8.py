@@ -12,7 +12,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 
-data = pd.read_csv('/content/drive/MyDrive/Energy_consumption.csv')
+data = pd.read_csv('Energy_consumption.csv')
 
 print(data.isnull().sum())
 
@@ -48,7 +48,7 @@ print(f'Mean Squared Error: {mse}')
 
 """3. Build a Streamlit App"""
 
-!pip install Streamlit
+
 import streamlit as st
 import numpy as np
 
