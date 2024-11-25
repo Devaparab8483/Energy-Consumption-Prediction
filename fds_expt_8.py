@@ -25,7 +25,7 @@ data[['Temperature', 'Humidity']] =scaler.fit_transform(data[['Temperature', 'Hu
 sns.pairplot(data, diag_kind='kde')
 plt.show()
 
-"""2. Build a Machine Learning Model"""
+
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import Ridge
@@ -46,7 +46,7 @@ y_pred = model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 print(f'Mean Squared Error: {mse}')
 
-"""3. Build a Streamlit App"""
+
 
 
 import streamlit as st
